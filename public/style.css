@@ -618,11 +618,12 @@ video {
     height: 80%;
   }
   .video-container{
-    left: 30px;
+    left: 28px;
   }
 }
 
 @media (max-width: 768px) {
+
   .beanPoleText {
     width: 100%;
     display: inline-block;
