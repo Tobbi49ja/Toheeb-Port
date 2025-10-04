@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  background-color: #F0EBE5;
+}
 main {
   width: 100%;
   max-width: 1440px;
@@ -163,6 +168,7 @@ main {
 .text3 {
   font-size: 106.667px;
   text-transform: capitalize;
+  font-family: 'Italiana', serif;
 }
 .text4 {
   font-size: 30px;
@@ -189,7 +195,7 @@ main {
   position: absolute;
   top: 63px;
   color: #000000;
-  font-family: YAEsdklG4-k-0;
+font-family: 'Italiana', serif;
   line-height: 0.86666667em;
   text-transform: none;
   letter-spacing: 0em;
@@ -202,6 +208,7 @@ main {
   text-decoration-line: none;
   color: #000000;
   font-style: normal;
+  font-family: 'Italiana', serif;
   font-weight: 400;
 }
 
@@ -361,6 +368,7 @@ main {
 }
 
 .getintouch {
+  font-family: 'Italiana', serif;
   padding: 50px 0 150px 40px;
   font-size: 100px;
   line-height: 78px;
@@ -647,12 +655,12 @@ video {
     right: 20%;
     font-size: 3vw;
   }
+    .video-container{
+    width: 90%;
+  }
 }
 
 @media (max-width: 425px) {
-  video {
-    display: none;
-  }
   .imgCard2 {
     border-radius: 35px;
   }
@@ -718,6 +726,9 @@ video {
   }
   .happyus {
     font-size: 2vw;
+  }
+      .video-container{
+        left: 17px;
   }
 }
 
