@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color: #F0EBE5;
+body {
+  background-color: #f0ebe5;
 }
 main {
   width: 100%;
@@ -168,11 +167,14 @@ main {
 .text3 {
   font-size: 106.667px;
   text-transform: capitalize;
-  font-family: 'Italiana', serif;
+  font-family: "Italiana", serif;
 }
-.text4 {
+.text4 a {
   font-size: 30px;
   text-transform: uppercase;
+  color: #fff;
+  font-family: "Italiana", serif;
+  cursor: pointer;
 }
 .text5 {
   font-size: 21.33px;
@@ -195,7 +197,7 @@ main {
   position: absolute;
   top: 63px;
   color: #000000;
-font-family: 'Italiana', serif;
+  font-family: "Italiana", serif;
   line-height: 0.86666667em;
   text-transform: none;
   letter-spacing: 0em;
@@ -208,7 +210,7 @@ font-family: 'Italiana', serif;
   text-decoration-line: none;
   color: #000000;
   font-style: normal;
-  font-family: 'Italiana', serif;
+  font-family: "Italiana", serif;
   font-weight: 400;
 }
 
@@ -368,7 +370,7 @@ font-family: 'Italiana', serif;
 }
 
 .getintouch {
-  font-family: 'Italiana', serif;
+  font-family: "Italiana", serif;
   padding: 50px 0 150px 40px;
   font-size: 100px;
   line-height: 78px;
@@ -617,13 +619,12 @@ video {
     width: 100%;
     height: 80%;
   }
-  .video-container{
+  .video-container {
     left: 28px;
   }
 }
 
 @media (max-width: 768px) {
-
   .beanPoleText {
     width: 100%;
     display: inline-block;
@@ -656,7 +657,7 @@ video {
     right: 20%;
     font-size: 3vw;
   }
-    .video-container{
+  .video-container {
     width: 90%;
   }
 }
@@ -728,8 +729,8 @@ video {
   .happyus {
     font-size: 2vw;
   }
-      .video-container{
-        left: 17px;
+  .video-container {
+    left: 17px;
   }
 }
 
@@ -1075,6 +1076,41 @@ video {
   opacity: 0.9;
 }
 
+.fade-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+
+.fade-up {
+  transform: translateY(40px);
+}
+.fade-down {
+  transform: translateY(-40px);
+}
+.fade-left {
+  transform: translateX(-60px);
+}
+.fade-right {
+  transform: translateX(60px);
+}
+.fade-zoom {
+  transform: scale(0.9);
+}
+
+.fade-up.visible,
+.fade-down.visible,
+.fade-left.visible,
+.fade-right.visible,
+.fade-zoom.visible {
+  transform: none;
+}
+
 /* Media Queries */
 @media (max-width: 1024px) {
   .beanPole {
@@ -1111,7 +1147,7 @@ video {
     width: 100%;
     height: 80%;
   }
-  .video-container{
+  .video-container {
     left: 30px;
   }
 }
