@@ -825,7 +825,7 @@ left {
   height: 29%;
   width: 100%;
   background-color: antiquewhite;
-  background: url(/Our%20Portfolio_files/328e0578f1a83c9e0224550a96424176.png),
+  background: url(/Our_Portfolio_files/328e0578f1a83c9e0224550a96424176.png),
     no-repeat;
   background-size: cover;
   background-position: top;
@@ -1152,9 +1152,6 @@ video {
 }
 
 @media (max-width: 425px) {
-  video {
-    display: none;
-  }
   .imgCard2 {
     border-radius: 35px;
   }
